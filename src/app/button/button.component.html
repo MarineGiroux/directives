@@ -1,0 +1,12 @@
+<div>
+
+<h1 [ngStyle] = "{color : isAdmin? 'red': 'black'}">{{ title }}</h1>
+
+<button (click)="toggleIsAdmin()">{{ buttonIsAdmin.name }}</button>
+
+<button>{{ buttonView.name }}</button>
+      
+<button *ngIf = "isAdmin">{{ buttonEdit.name }}</button>
+
+
+</div>
